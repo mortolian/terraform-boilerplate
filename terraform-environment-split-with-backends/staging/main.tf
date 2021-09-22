@@ -18,7 +18,13 @@ provider "aws" {
 module "instance" {
   source = "../modules/instance"
   name = "ExampleName"
-  ami = "ami-0f7cd40eac2214b37" // Ubuntu 20.04 - Free Tier
+  aws_ami = "ami-0a8e758f5e873d1c1" // Ubuntu 20.04 - Free Tier (eu-west-1)
   instance_type = "t2.micro"
   environment = "Staging"
+}
+output "instance-ec2-arn" {
+  value = module.instance.ec2_arn
+}
+output "instance-ec2-public-ip" {
+  value = module.instance.ec2_public_ip
 }

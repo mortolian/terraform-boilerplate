@@ -3,10 +3,9 @@ variable "name" {
   description = "The name of the instance"
 }
 
-variable "ami" {
+variable "aws_ami" {
   type = string
   description = "The AMI (Amazon Machine Image)"
-  default = "ami-0f7cd40eac2214b37" // Ubuntu 20.04 - Free Tier
 }
 
 variable "instance_type" {

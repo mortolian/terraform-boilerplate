@@ -116,3 +116,5 @@ git sparse-checkout list
 ```
 
 ## Basic Gitignore for Terraform
+
+* <https://github.com/github/gitignore/blob/master/Terraform.gitignore>
